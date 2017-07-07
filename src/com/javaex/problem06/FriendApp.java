@@ -24,11 +24,13 @@ public class FriendApp {
         	String info = sc.nextLine();
         	String[] str = info.split(" ");
         	
-        	Friend fr = new Friend();
+        	friendArray[i] = new Friend();
+        	friendArray[i].setInfo(str);
+        	/*Friend fr = new Friend();
         	fr.setInfo(str);
         	
         	friendArray[i]=fr;
-        	
+        	*/
         }
         
         
