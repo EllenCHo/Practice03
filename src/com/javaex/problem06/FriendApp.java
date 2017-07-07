@@ -20,10 +20,22 @@ public class FriendApp {
 
             // 배열에 추가하기
 
+        for(int i = 0; i < friendArray.length; i++) {
+        	String info = sc.nextLine();
+        	String[] str = info.split(" ");
+        	
+        	Friend fr = new Friend();
+        	fr.setInfo(str);
+        	
+        	friendArray[i]=fr;
+        	
+        }
+        
         
         // 친구정보 출력
         for (int i = 0; i < friendArray.length; i++) {
             //친구정보 출력 메소드 호출
+        	friendArray[i].showInfo();
         }
 
         sc.close();

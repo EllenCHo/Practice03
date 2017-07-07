@@ -8,6 +8,24 @@ public class Friend {
 
     
     //필요한 메소드 작성
+    public void setName(String name) {
+    	this.name = name;
+    }
+    
+    public void setHp(String hp) {
+    	this.hp = hp;
+    }
+    
+    public void setSchool(String school) {
+    	this.school = school;
+    }
+    
+    public void setInfo(String[] str) {
+    	this.name = str[0];
+    	this.hp = str[1];
+    	this.school = str[2];
+    }
+    
     
     
     
