@@ -44,11 +44,10 @@ public class Book {
     public void setStateCode(int stateCode) {
     	this.stateCode = stateCode;
     }
-    public void rent(int num) {
-    	if(bookNo == num) {
-    		stateCode = 0;
-    		System.out.println(title + "이(가) 대여 됐습니다.");
-    	}
+    public void rent() {
+    	stateCode = 0;
+    	System.out.println(title + "이(가) 대여 됐습니다.");
+
     	
     }
     
